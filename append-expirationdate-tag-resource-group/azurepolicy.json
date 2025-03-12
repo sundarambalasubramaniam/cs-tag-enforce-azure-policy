@@ -1,15 +1,13 @@
 {
-  "id": "/providers/Microsoft.Authorization/policyDefinitions/addexpirationtagresourcegroup",
-  "type": "Microsoft.Authorization/policyDefinitions",
-  "name": "addexpirationtagresourcegroup",
   "properties": {
-    "displayName": "Append datetime (utc) tag when resource group will be terminated",
+    "displayName": "CS Append expirationdate-tag-resource-groups",
     "policyType": "Custom",
     "mode": "All",
     "description": "Appends the a creationd date/time tag and adds x days when the resource group should be terminated. Does not modify the tags of resource groups created before this policy was applied until those resource groups are changed.",
     "metadata": {
-      "category": "Tags"
-    },
+      "category": "Tags",
+     },
+    "version": "1.0.0",
     "parameters": {
       "tagName": {
         "type": "String",
@@ -48,6 +46,9 @@
           }
         ]
       }
-    }
-  }
+    },
+    "versions": [
+      "1.0.0"
+    ]
+  },
 }
